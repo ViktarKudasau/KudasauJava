@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
 public class ComparisonNames {
-    //если введенное имя совпадает с Вячеслав, то вывести “Привет, Вячеслав”, если нет, то вывести "Нет такого имени"
-    static String validName = "Вячеслав";
+    //РµСЃР»Рё РІРІРµРґРµРЅРЅРѕРµ РёРјСЏ СЃРѕРІРїР°РґР°РµС‚ СЃ Р’СЏС‡РµСЃР»Р°РІ, С‚Рѕ РІС‹РІРµСЃС‚Рё вЂњРџСЂРёРІРµС‚, Р’СЏС‡РµСЃР»Р°РІвЂќ, РµСЃР»Рё РЅРµС‚, С‚Рѕ РІС‹РІРµСЃС‚Рё "РќРµС‚ С‚Р°РєРѕРіРѕ РёРјРµРЅРё"
+    static String validName = "Р’СЏС‡РµСЃР»Р°РІ";
     static String userName;
-    static String message = "Привет, Вячеслав";
+    static String message = "РџСЂРёРІРµС‚, Р’СЏС‡РµСЃР»Р°РІ";
     static Scanner scanner = new Scanner(System.in);
     static void compareNames() {
-        System.out.println("Введите имя:");
+        System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ:");
         userName = scanner.nextLine();
         if (validName.equals(userName)) {
                 System.out.println(message);
             } else {
-            System.out.println("Нет такого имени");
+            System.out.println("РќРµС‚ С‚Р°РєРѕРіРѕ РёРјРµРЅРё");
         }
     }
 }

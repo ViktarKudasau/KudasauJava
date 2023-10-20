@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        ComparisonNumbers.compareNumbers(); // Обращаемся к методу compareNumbers (Задание 1)
-        ComparisonNames.compareNames();     // Обращаемся к методу compareNames (Задание 2)
-        PrintingArray.printArray();         // Обращаемся к методу printArray (Задание 3)
+        ComparisonNumbers.compareNumbers(); // РћР±СЂР°С‰Р°РµРјСЃСЏ Рє РјРµС‚РѕРґСѓ compareNumbers (Р—Р°РґР°РЅРёРµ 1)
+        ComparisonNames.compareNames();     // РћР±СЂР°С‰Р°РµРјСЃСЏ Рє РјРµС‚РѕРґСѓ compareNames (Р—Р°РґР°РЅРёРµ 2)
+        PrintingArray.printArray();         // РћР±СЂР°С‰Р°РµРјСЃСЏ Рє РјРµС‚РѕРґСѓ printArray (Р—Р°РґР°РЅРёРµ 3)
     }
 }

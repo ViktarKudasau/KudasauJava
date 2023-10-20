@@ -1,28 +1,28 @@
 import java.util.Scanner;
 public class ComparisonNumbers {
-    //Составить алгоритм: если введенное число больше 7, то вывести “Привет”
+    //РЎРѕСЃС‚Р°РІРёС‚СЊ Р°Р»РіРѕСЂРёС‚Рј: РµСЃР»Рё РІРІРµРґРµРЅРЅРѕРµ С‡РёСЃР»Рѕ Р±РѕР»СЊС€Рµ 7, С‚Рѕ РІС‹РІРµСЃС‚Рё вЂњРџСЂРёРІРµС‚вЂќ
     static double numberOne = 7;
     static double numberUser;
-    static String message = "Привет";
+    static String message = "РџСЂРёРІРµС‚";
     static String answer;
     static Scanner scanner = new Scanner(System.in);
     static void compareNumbers() {
         while (true) {
-            System.out.println("Введите число:");
+            System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:");
             numberUser = scanner.nextDouble();
             if (numberUser > numberOne){
                 System.out.println(message);
                 break;
             }else {
-                System.out.println("Введенное число меньше либо равно заданному. Хотите продолжить? 'да' или 'нет' :");
+                System.out.println("Р’РІРµРґРµРЅРЅРѕРµ С‡РёСЃР»Рѕ РјРµРЅСЊС€Рµ Р»РёР±Рѕ СЂР°РІРЅРѕ Р·Р°РґР°РЅРЅРѕРјСѓ. РҐРѕС‚РёС‚Рµ РїСЂРѕРґРѕР»Р¶РёС‚СЊ? 'РґР°' РёР»Рё 'РЅРµС‚' :");
                 scanner = new Scanner(System.in);
                 answer = scanner.nextLine();
-                while ((!answer.equalsIgnoreCase("нет")) && (!answer.equalsIgnoreCase("да"))){
-                    System.out.println("Некорректное выражение. Желаете продолжить 'да' или 'нет' ?:");
+                while ((!answer.equalsIgnoreCase("РЅРµС‚")) && (!answer.equalsIgnoreCase("РґР°"))){
+                    System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅРѕРµ РІС‹СЂР°Р¶РµРЅРёРµ. Р–РµР»Р°РµС‚Рµ РїСЂРѕРґРѕР»Р¶РёС‚СЊ 'РґР°' РёР»Рё 'РЅРµС‚' ?:");
                     answer = scanner.nextLine();
                 }
-                if (answer.equalsIgnoreCase("нет")){
-                    System.out.println("Вы вышли из приложения сравнения чисел");
+                if (answer.equalsIgnoreCase("РЅРµС‚")){
+                    System.out.println("Р’С‹ РІС‹С€Р»Рё РёР· РїСЂРёР»РѕР¶РµРЅРёСЏ СЃСЂР°РІРЅРµРЅРёСЏ С‡РёСЃРµР»");
                     break;
                 }
             }
