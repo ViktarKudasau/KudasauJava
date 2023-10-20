@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class PrintingArray {
     //на входе есть числовой массив, необходимо вывести элементы массива кратные 3
     static Scanner scanner = new Scanner(System.in);
-    static  int sizeArray;                                   //Задаем размер массива целых чисел
-    static int[] array;                       //Задаем массив целых чисел
+    static  int sizeArray;
+    static int[] array;
     static void printArray() {
         System.out.println("Введите желаемый размер массива (кол-во элементов в массиве:)");
         sizeArray = scanner.nextInt();                    //Задаем размер массива целых чисел
